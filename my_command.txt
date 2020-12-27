@@ -1,0 +1,13 @@
+학습
+python3 train.py --img 640 --batch 8 --epochs 10 --data contest.yaml --weights yolov5l.pt --cfg yolov5_contest.yaml
+python3 train.py --img 640 --batch 8 --epochs 10 --data contest.yaml --weights runs/train/exp3/weights/last.pt --cfg yolov5_contest.yaml --resume
+
+python3 train.py --img 1536 --batch 2 --epochs 2 --data contest.yaml --weights runs/train/exp3/weights/last.pp --cfg yolov5_contest.yaml --resume
+
+
+map 보기
+python3.8 test.py --img 640 --conf 0.001 --batch 8 --device 0 --data coco.yaml --weights runs/train/exp9/weights/best.pt
+python3.8 test.py --img 1536 --conf 0.001 --batch 8 --device 0 --data coco.yaml --weights runs/train/exp9/weights/best.pt
+
+사진보기
+python3 detect.py --weights runs/train/exp3/weights/best.pt --img 640 --conf 0.5 --source ../coco/my_test/ --save-txt
