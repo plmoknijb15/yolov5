@@ -1,3 +1,20 @@
+# FOSCAR팀 객체 검출
+
+Pretrained된 yolov5l 모델를 이용해서 학습을 진행했습니다.
+데이터는 약 7만장을 사용하였고, 학습 시간이 부족하여 epoch는 5번 밖에 돌지 못했습니다.
+7만개 데이터 중에 3000개를 validation set으로 활용했고, 모델의 크기는 100MB 정도입니다.
+
+test.py를 통하여 map를 구할 수 있고,
+train.py를 통하여 모델을 학습 시킬 수 있습니다.
+
+
+
+------------------------------------------------------------------------------------------------
+
+
+
+
+
 <a href="https://apps.apple.com/app/id1452689527" target="_blank">
 <img src="https://user-images.githubusercontent.com/26833433/98699617-a1595a00-2377-11eb-8145-fc674eb9b1a7.jpg" width="1000"></a>
 &nbsp
